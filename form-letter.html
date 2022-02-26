@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Availability for Interview</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Availability for Interview Email</h1>
+      <h4>
+        Fill in the blanks to create a customized request to interview email:
+      </h4>
+      <div>
+        <form id="letterForm">
+          <div class="form-group">
+            <label for="person1">Name of Person You're Addressing</label>
+            <input id="person1" class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="date1">Date & Time Available 1:</label>
+            <input id="date1" class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="date2">Date & Time Available 2:</label>
+            <input id="date2" class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="date3">Date & Time Available 3:</label>
+            <input id="date3" class="form-control" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="person2">Your Name -- to Sign at End of Letter</label>
+            <input id="person2" class="form-control" type="text" />
+          </div>
+          <button type="submit" class="btn">Generate Email</button>
+        </form>
+      </div>
+      <h4 id="pageBreak">Generated Email:</h4>
+      <div id="letterTemplate">
+        <p>Hello <span class="person1"></span>,</p>
+        <p>I have the following dates and times available for interview:</p>
+        <ul>
+          <li><span class="date1"></span></li>
+          <li><span class="date2"></span></li>
+          <li><span class="date3"></span></li>
+        </ul>
+        <p>
+          Please let me know which would work the best for you at your earliest
+          convenience. Looking forward to speaking with you,
+        </p>
+        <br />
+        <p>Best regards,</p>
+        <p><span class="person2"></span></p>
+      </div>
+    </div>
+  </body>
+</html>

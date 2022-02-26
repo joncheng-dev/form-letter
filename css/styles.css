@@ -1,0 +1,36 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-decoration: underline;
+}
+
+h4 {
+  text-align: left;
+  margin-top: 7%;
+  font-weight: bold;
+}
+
+p {
+  font-size: larger;
+}
+
+.btn {
+  position: absolute;
+  background-color: gray;
+  color: black;
+}
+
+#pageBreak {
+  text-align: center;
+}
+
+#letterTemplate {
+  display: none;
+}
