@@ -7,11 +7,20 @@ $(document).ready(function () {
     const date3Input = $("input#date3").val();
     const person2Input = $("input#person2").val();
 
-    $(".person1").text(person1Input);
-    $(".date1").text(date1Input);
-    $(".date2").text(date2Input);
-    $(".date3").text(date3Input);
-    $(".person2").text(person2Input);
+    const userInput = [
+      person1Input,
+      date1Input,
+      date2Input,
+      date3Input,
+      person2Input,
+    ];
+
+    // Counter keeps track of which type-in form to grab text from.
+    let counter = 0;
+    userInput.forEach(function (entry) {
+      $("counter").text(entry);
+      counter += 1;
+    });
 
     $("#letterTemplate").show();
   });
